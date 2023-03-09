@@ -26,7 +26,7 @@ variable "secret_key" {}
 variable "region_deployment" {}
 
 # Output variable as a POC
-output "access_key"        { value = var.access_key }
-output "secret_key"        { value = var.secret_key }
+output "access_key" { value = var.access_key }
+output "secret_key" { value = var.secret_key }
 output "region_deployment" { value = var.region_deployment }
 output "availabilty_zones" { value = data.aws_availability_zones.availabilty_zones.names }
