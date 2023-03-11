@@ -8,7 +8,7 @@ resource "aws_lambda_function" "lambda_function" {
   runtime       = "python3.9"
   # The name of the method within your code that lambda calls to run your function
   # Required if the deployment package is a .zip file archive.
-  handler      = "lambdafunction.LambdaHandler"
+  handler      = "lambda_function.lambda_handler"
   package_type = "Zip"
 }
 
