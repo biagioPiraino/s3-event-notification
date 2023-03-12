@@ -17,6 +17,10 @@
     <td>S3 Event Notification</td>
     <td>AWS Lambda Function</td>
   </tr>
+  <tr>
+    <td>S3 Event Notification</td>
+    <td>AWS Simple Notification Service</td>
+  </tr>
 </tbody>
 </table>
 
@@ -35,12 +39,30 @@
     <td>
       <ol>
         <li>
-            Create <a href="https://developer.hashicorp.com/terraform/cli/config/environment-variables">environment variables</a>
+            Create the <a href="https://developer.hashicorp.com/terraform/cli/config/environment-variables">environment variables</a>
             specifying the <em>region_deployment</em> 
             and an AWS account's <em>access_key</em> and <em>secret_key</em>.
         </li>
         <li>
             Modify the deployment package according to your needs.
+        </li>
+        <li>
+            Run <em>terraform init</em> -> <em>terraform plan</em> -> <em>terraform apply</em> from your terminal.
+        </li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>sns-integration</td>
+    <td>
+      <ol>
+        <li>
+            Create the <a href="https://developer.hashicorp.com/terraform/cli/config/environment-variables">environment variables</a>
+            specifying the <em>region_deployment</em>, the <em>personal_email</em> endpoint
+            and an AWS account's <em>access_key</em> and <em>secret_key</em>.
+        </li>
+        <li>
+            Confirm the subscription to the SNS topic from the email account specified in the <em>personal_email</em> endpoint
         </li>
         <li>
             Run <em>terraform init</em> -> <em>terraform plan</em> -> <em>terraform apply</em> from your terminal.
@@ -98,6 +120,26 @@
   <tr>
     <td>
       <a href="https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html#SSS-CreateFunction-request-Runtime">Working with Lambda functions, developer reference</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic">Create an SNS topic using Terraform</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://docs.aws.amazon.com/AmazonS3/latest/userguide/ways-to-add-notification-config-to-bucket.html">Configuring a bucket for notifications</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://developer.hashicorp.com/terraform/tutorials/aws/aws-iam-policy">Create an IAM policy document using Terraform</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription">Create a SNS topic subscription using Terraform</a>
     </td>
   </tr>
 </tbody>
