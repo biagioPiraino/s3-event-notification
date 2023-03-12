@@ -28,3 +28,4 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 lambda-integration/.terraform.lock.hcl
+sns-integration/.terraform.lock.hcl
