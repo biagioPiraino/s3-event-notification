@@ -29,3 +29,4 @@ override.tf.json
 # example: *tfplan*
 lambda-integration/.terraform.lock.hcl
 sns-integration/.terraform.lock.hcl
+sqs-integration/.terraform.lock.hcl
