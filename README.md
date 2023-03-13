@@ -21,6 +21,10 @@
     <td>S3 Event Notification</td>
     <td>AWS Simple Notification Service</td>
   </tr>
+  <tr>
+    <td>S3 Event Notification</td>
+    <td>AWS Simple Queue Service</td>
+  </tr>
 </tbody>
 </table>
 
@@ -63,6 +67,20 @@
         </li>
         <li>
             Confirm the subscription to the SNS topic from the email account specified in the <em>personal_email</em> endpoint
+        </li>
+        <li>
+            Run <em>terraform init</em> -> <em>terraform plan</em> -> <em>terraform apply</em> from your terminal.
+        </li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>sqs-integration</td>
+    <td>
+      <ol>
+        <li>
+            Create the <a href="https://developer.hashicorp.com/terraform/cli/config/environment-variables">environment variables</a>
+            specifying the <em>region_deployment</em>, and an AWS account's <em>access_key</em> and <em>secret_key</em>.
         </li>
         <li>
             Run <em>terraform init</em> -> <em>terraform plan</em> -> <em>terraform apply</em> from your terminal.
@@ -140,6 +158,11 @@
   <tr>
     <td>
       <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic_subscription">Create a SNS topic subscription using Terraform</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sqs_queue">Create a SQS using Terraform</a>
     </td>
   </tr>
 </tbody>
