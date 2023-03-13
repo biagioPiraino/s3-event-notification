@@ -30,3 +30,4 @@ override.tf.json
 lambda-integration/.terraform.lock.hcl
 sns-integration/.terraform.lock.hcl
 sqs-integration/.terraform.lock.hcl
+fanout-pattern/.terraform.lock.hcl
