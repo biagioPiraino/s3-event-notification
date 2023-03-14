@@ -193,7 +193,7 @@
   </tr>
   <tr>
     <td>
-      <a href="https://noise.getoto.net/2022/11/22/introducing-payload-based-message-filtering-for-amazon-sns/">Create SNS message filtering for S3 event notifications</a>
+      <a href="https://noise.getoto.net/2022/11/22/introducing-payload-based-message-filtering-for-amazon-sns/">Create SNS message filters for S3 event notifications</a>
     </td>
   </tr>
 </tbody>
