@@ -25,6 +25,10 @@
     <td>S3 Event Notification</td>
     <td>AWS Simple Queue Service</td>
   </tr>
+  <tr>
+    <td>S3 Event Notification</td>
+    <td><a href="https://docs.aws.amazon.com/sns/latest/dg/sns-common-scenarios.html">Fanout Pattern</a></td>
+  </tr>
 </tbody>
 </table>
 
@@ -81,6 +85,23 @@
         <li>
             Create the <a href="https://developer.hashicorp.com/terraform/cli/config/environment-variables">environment variables</a>
             specifying the <em>region_deployment</em>, and an AWS account's <em>access_key</em> and <em>secret_key</em>.
+        </li>
+        <li>
+            Run <em>terraform init</em> -> <em>terraform plan</em> -> <em>terraform apply</em> from your terminal.
+        </li>
+      </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>fanout-pattern</td>
+    <td>
+      <ol>
+        <li>
+            Create the <a href="https://developer.hashicorp.com/terraform/cli/config/environment-variables">environment variables</a>
+            specifying the <em>region_deployment</em>, and an AWS account's <em>access_key</em> and <em>secret_key</em>.
+        </li>
+        <li>
+            Modify the SNS subscription filters inside the <em>sns.tf</em> script according to your needs.
         </li>
         <li>
             Run <em>terraform init</em> -> <em>terraform plan</em> -> <em>terraform apply</em> from your terminal.
@@ -163,6 +184,16 @@
   <tr>
     <td>
       <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sqs_queue">Create a SQS using Terraform</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html">SNS message filtering</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://noise.getoto.net/2022/11/22/introducing-payload-based-message-filtering-for-amazon-sns/">Create SNS message filtering for S3 event notifications</a>
     </td>
   </tr>
 </tbody>
