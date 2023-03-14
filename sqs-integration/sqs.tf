@@ -26,6 +26,6 @@ data "aws_iam_policy_document" "s3_send_to_sqs" {
 # while creating the policy document and the SQS queue
 variable "sqs_queue_resource_arn" { default = "arn:aws:sqs:*:*:S3EventNotificationQueue" }
 
-# Output information about the SNS topic
+# Output information about the SQS queue
 output "sqs_queue_arn" { value = aws_sqs_queue.sqs_s3_event_notification.arn }
 output "sqs_queue_policy" { value = data.aws_iam_policy_document.s3_send_to_sqs.json }
